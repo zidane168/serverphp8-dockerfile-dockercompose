@@ -1,0 +1,8 @@
+docker build . -t serverphp8
+
+docker-compose --compatibility up -d --force-recreate
+
+// ---------------------------------------------------
+access the server for check result
+localhost:8080
+// ---------------------------------------------------

@@ -1,0 +1,14 @@
+version: '3.8'
+
+networks:
+  default:
+    name: learntechtips-network
+
+services:
+  app:
+    container_name: serverphp8
+    image: serverphp8
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www/html:delegated
